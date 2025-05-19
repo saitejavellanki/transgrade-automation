@@ -61,7 +61,8 @@ def restructure_answers():
         return jsonify({'error': f'Invalid JSON input: {str(e)}'}), 400
 
     result = restructure_student_answers(key_data, student_data)
-
+    
+    # Return the raw text response
     return result
 
 @app.route('/convert-json-to-layoutlm', methods=['POST'])

@@ -12,20 +12,19 @@ def index():
 
 @app.route('/upload-pdf', methods=['POST'])
 def upload_pdf():
-    if 'pdf' not in request.files:
-        return render_template('upload.html', result="No PDF uploaded")
-    
+    if 'pdf' not in request.files or 'key_json' not in request.files:
+        return render_template('upload.html', result="PDF and Key JSON are required")
+
     pdf_file = request.files['pdf']
-    
-    # Step 1: Send to backend to convert PDF to images
+    key_file = request.files['key_json']
+
+    # Step 1: Convert PDF to images
     files = {'pdf': (pdf_file.filename, pdf_file.stream, 'application/pdf')}
     convert_response = requests.post(f"{BACKEND_URL}/convert-pdf", files=files)
-
     if convert_response.status_code != 200:
         return render_template('upload.html', result="PDF conversion failed")
 
     image_paths = convert_response.json().get('images', [])
-
     extracted_data = []
     layoutlm_data = []
 
@@ -34,17 +33,15 @@ def upload_pdf():
             img_data = img_file.read()
             files = {'image': ('image.png', img_data, 'image/png')}
             ocr_response = requests.post(f"{BACKEND_URL}/word-level", files=files)
-            
+
             if ocr_response.status_code == 200:
                 word_data = ocr_response.json()
                 extracted_data.append(word_data)
 
-                # Step 2: Convert OCR to LayoutLM format
-                json_payload = {'image_path': image_path}
                 layoutlm_response = requests.post(
                     f"{BACKEND_URL}/convert-json-to-layoutlm",
                     files={'json': ('ocr.json', json.dumps(word_data), 'application/json')},
-                    data=json_payload
+                    data={'image_path': image_path}
                 )
 
                 if layoutlm_response.status_code == 200:
@@ -55,7 +52,32 @@ def upload_pdf():
                 extracted_data.append({'error': f"Failed to extract text from {image_path}"})
                 layoutlm_data.append({'error': f"LayoutLM conversion skipped for {image_path}"})
 
-    # Pack both OCR and LayoutLM for each page
+    # Combine OCRs for all pages into one student script
+    combined_student_ocr = {
+        "pages": extracted_data  # Optional: you can flatten this if needed
+    }
+
+    restructure_files = {
+        'key': (key_file.filename, key_file.stream, 'application/json'),
+        'student': ('student.json', json.dumps(combined_student_ocr), 'application/json')
+    }
+
+    restructure_response = requests.post(
+        f"{BACKEND_URL}/restructure-answers",
+        files=restructure_files
+    )
+
+    if restructure_response.status_code == 200:
+       restructure_result = {
+        "raw_response": restructure_response.text
+    }
+    else:
+       restructure_result = {
+        "error": f"Status {restructure_response.status_code}",
+        "details": restructure_response.text
+    }
+
+
     page_results = [
         {
             'page': idx + 1,
@@ -64,7 +86,9 @@ def upload_pdf():
         }
         for idx in range(len(extracted_data))
     ]
-    return render_template('upload.html', result=page_results)
+
+    return render_template('upload.html', result=page_results, restructure=restructure_result)
+
 
 
 if __name__ == '__main__':

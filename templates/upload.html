@@ -1,4 +1,4 @@
-<!-- templates/upload.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,27 +90,38 @@
   </style>
 </head>
 <body>
-  <h2>Upload PDF for OCR</h2>
+  <h2>Upload Student Script and Key</h2>
   <form action="/upload-pdf" method="post" enctype="multipart/form-data" onsubmit="showLoader()">
+    <label>Student Script (PDF):</label>
     <input type="file" name="pdf" accept=".pdf" required>
+
+    <label>Key File (JSON):</label>
+    <input type="file" name="key_json" accept=".json" required>
+
     <button type="submit">Upload and Process</button>
     <div class="loader" id="loader"></div>
   </form>
 
   {% if result %}
-  <h3>OCR & LayoutLM Results (Page-wise)</h3>
-  {% for page in result %}
-    <h4>Page {{ page.page }}</h4>
+    <h3>OCR & LayoutLM Results (Page-wise)</h3>
+    {% for page in result %}
+      <h4>Page {{ page.page }}</h4>
 
-    <strong>Word-Level OCR:</strong>
-    <pre>{{ page.ocr | tojson(indent=2) }}</pre>
+      <strong>Word-Level OCR:</strong>
+      <pre>{{ page.ocr | tojson(indent=2) }}</pre>
 
-    <strong>LayoutLM Format:</strong>
-    <pre>{{ page.layoutlm | tojson(indent=2) }}</pre>
+      <strong>LayoutLM Format:</strong>
+      <pre>{{ page.layoutlm | tojson(indent=2) }}</pre>
 
-    <hr>
-  {% endfor %}
+      <hr>
+    {% endfor %}
   {% endif %}
+
+  {% if result %}
+  <h3>Restructure API Raw Response</h3>
+  <pre>{{ result.raw_response }}</pre>
+{% endif %}
+
 
   <script>
     function showLoader() {
