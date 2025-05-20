@@ -963,7 +963,7 @@ def main():
     
     # Run the Flask app
     print(f"Starting PDF Processing Tool on port {args.port}")
-    app.run(debug=True, port=args.port)
+    app.run(debug=False, host='0.0.0.0', port=args.port)
 
 if __name__ == "__main__":
     main()
