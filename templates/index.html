@@ -4,81 +4,410 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Processing Tool</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <style>
+        /* Apple-inspired Design System */
+        :root {
+            --primary: #0071e3;
+            --primary-dark: #0051a3;
+            --light-gray: #f5f5f7;
+            --mid-gray: #d2d2d7;
+            --dark-gray: #86868b;
+            --text: #1d1d1f;
+            --radius: 12px;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: white;
+            color: var(--text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
         h1 {
-            color: #333;
-            text-align: center;
+            font-weight: 600;
+            font-size: 32px;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
         }
-        .upload-container {
-            border: 2px dashed #ccc;
-            padding: 20px;
-            text-align: center;
+        
+        h2 {
+            font-weight: 500;
+            font-size: 24px;
             margin-bottom: 20px;
+            letter-spacing: -0.3px;
         }
-        .results-container {
+        
+        h3 {
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+        
+        .subheading {
+            color: var(--dark-gray);
+            font-weight: 400;
+            font-size: 18px;
+        }
+        
+        /* Upload Container */
+        .card {
+            background-color: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: var(--transition);
+            border: 1px solid var(--mid-gray);
+        }
+        
+        .card:hover {
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .upload-container {
+            text-align: center;
+        }
+        
+        .upload-area {
+            border: 2px dashed var(--mid-gray);
+            border-radius: var(--radius);
+            padding: 40px 20px;
+            margin: 20px 0;
+            transition: var(--transition);
+            cursor: pointer;
+            background-color: var(--light-gray);
+        }
+        
+        .upload-area:hover {
+            border-color: var(--primary);
+            background-color: rgba(0, 113, 227, 0.05);
+        }
+        
+        .upload-icon {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+        
+        .upload-text {
+            font-size: 16px;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+        }
+        
+        .file-input {
             display: none;
-            margin-top: 30px;
         }
-        .page-results {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 5px;
+        
+        .file-name {
+            font-size: 14px;
+            color: var(--text);
+            margin-top: 10px;
+            display: none;
         }
-        .page-image {
-            max-width: 100%;
-            margin-bottom: 10px;
+        
+        /* Button Styles */
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
         }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background-color: var(--light-gray);
+            color: var(--text);
+            border: 1px solid var(--mid-gray);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--mid-gray);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        /* Loading Animation */
         .loading {
             display: none;
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 113, 227, 0.1);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            color: var(--dark-gray);
+            font-size: 16px;
+        }
+        
+        /* Results Section */
+        .results-container {
+            display: none;
+            margin-top: 40px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        
+        .results-container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .page-results {
+            border-radius: var(--radius);
+            background-color: white;
+            box-shadow: var(--shadow);
+            padding: 24px;
+            margin-bottom: 24px;
+            transition: var(--transition);
+            border: 1px solid var(--mid-gray);
+        }
+        
+        .page-results:hover {
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        
+        .page-image-container {
+            margin: 16px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .page-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        
         .download-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 8px 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin: 5px;
-            text-decoration: none;
+            padding: 10px 16px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .download-icon {
+            font-size: 14px;
+        }
+        
+        /* Status Badge */
+        .status-badge {
             display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .upload-area {
+                padding: 30px 15px;
+            }
+            
+            .btn {
+                padding: 10px 18px;
+                font-size: 15px;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            
+            .actions {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .download-btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>PDF Processing Tool</h1>
-    
-    <div class="upload-container">
-        <h2>Upload PDF (Max 2 pages)</h2>
-        <form id="uploadForm" enctype="multipart/form-data">
-            <input type="file" id="pdfFile" name="pdf" accept=".pdf">
-            <button type="submit">Process PDF</button>
-        </form>
-    </div>
-    
-    <div class="loading" id="loading">
-        <p>Processing PDF... This may take a minute.</p>
-        <img src="https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif" alt="Loading...">
-    </div>
-    
-    <div class="results-container" id="results">
-        <h2>Processing Results</h2>
-        <div id="resultsContent"></div>
+    <div class="container">
+        <header>
+            <h1>PDF Processing Tool</h1>
+            <p class="subheading">Process PDFs with advanced document analysis</p>
+        </header>
+        
+        <div class="card">
+            <div class="upload-container">
+                <h2>Upload Document</h2>
+                <p class="upload-text">Maximum 2 pages per PDF file</p>
+                
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-file-pdf upload-icon"></i>
+                        <p>Drag & drop your PDF here or</p>
+                        <button type="button" class="btn btn-secondary" id="browseBtn">Browse Files</button>
+                        <input type="file" id="pdfFile" name="pdf" accept=".pdf" class="file-input">
+                        <p class="file-name" id="fileName"></p>
+                    </div>
+                    
+                    <button type="submit" class="btn" id="processBtn" disabled>Process PDF</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Processing your document...</p>
+            <p class="subheading">This may take a minute</p>
+        </div>
+        
+        <div class="results-container" id="results">
+            <h2>Processing Results</h2>
+            <div id="resultsContent"></div>
+        </div>
     </div>
     
     <script>
-        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+        // DOM Elements
+        const uploadForm = document.getElementById('uploadForm');
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('pdfFile');
+        const browseBtn = document.getElementById('browseBtn');
+        const fileName = document.getElementById('fileName');
+        const processBtn = document.getElementById('processBtn');
+        const loading = document.getElementById('loading');
+        const results = document.getElementById('results');
+        const resultsContent = document.getElementById('resultsContent');
+        
+        // File Upload Handling
+        browseBtn.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = var(--primary);
+            uploadArea.style.backgroundColor = 'rgba(0, 113, 227, 0.05)';
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.style.borderColor = '';
+            uploadArea.style.backgroundColor = '';
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '';
+            uploadArea.style.backgroundColor = '';
+            
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                updateFileName();
+            }
+        });
+        
+        fileInput.addEventListener('change', updateFileName);
+        
+        function updateFileName() {
+            if (fileInput.files.length > 0) {
+                fileName.textContent = fileInput.files[0].name;
+                fileName.style.display = 'block';
+                processBtn.disabled = false;
+            } else {
+                fileName.style.display = 'none';
+                processBtn.disabled = true;
+            }
+        }
+        
+        // Form Submission
+        uploadForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const fileInput = document.getElementById('pdfFile');
             if (!fileInput.files[0]) {
                 alert('Please select a PDF file');
                 return;
@@ -88,8 +417,9 @@
             formData.append('pdf', fileInput.files[0]);
             
             // Show loading indicator
-            document.getElementById('loading').style.display = 'block';
-            document.getElementById('results').style.display = 'none';
+            loading.style.display = 'block';
+            results.style.display = 'none';
+            processBtn.disabled = true;
             
             // Send the request
             fetch('/upload', {
@@ -99,39 +429,56 @@
             .then(response => response.json())
             .then(data => {
                 // Hide loading indicator
-                document.getElementById('loading').style.display = 'none';
+                loading.style.display = 'none';
                 
                 if (data.error) {
                     alert('Error: ' + data.error);
+                    processBtn.disabled = false;
                     return;
                 }
                 
                 // Display results
-                const resultsContainer = document.getElementById('resultsContent');
-                resultsContainer.innerHTML = '';
+                resultsContent.innerHTML = '';
                 
                 data.results.forEach(result => {
                     const pageDiv = document.createElement('div');
                     pageDiv.className = 'page-results';
                     
                     pageDiv.innerHTML = `
-                        <h3>Page ${result.page}</h3>
-                        <img src="${result.image_path}" class="page-image" alt="Page ${result.page}">
-                        <div>
-                            <a href="/download/${result.ocr_data_path}" class="download-btn">Download OCR Data</a>
-                            <a href="/download/${result.layoutlm_path}" class="download-btn">Download LayoutLM Format</a>
+                        <div class="page-header">
+                            <h3>Page ${result.page}</h3>
+                            <span class="status-badge">Processed</span>
+                        </div>
+                        <div class="page-image-container">
+                            <img src="${result.image_path}" class="page-image" alt="Page ${result.page}">
+                        </div>
+                        <div class="actions">
+                            <a href="/download/${result.ocr_data_path}" class="btn download-btn">
+                                <i class="fas fa-file-download download-icon"></i>
+                                OCR Data
+                            </a>
+                            <a href="/download/${result.layoutlm_path}" class="btn download-btn">
+                                <i class="fas fa-file-download download-icon"></i>
+                                LayoutLM Format
+                            </a>
                         </div>
                     `;
                     
-                    resultsContainer.appendChild(pageDiv);
+                    resultsContent.appendChild(pageDiv);
                 });
                 
-                // Show results container
-                document.getElementById('results').style.display = 'block';
+                // Show results container with animation
+                results.style.display = 'block';
+                setTimeout(() => {
+                    results.classList.add('visible');
+                }, 50);
+                
+                processBtn.disabled = false;
             })
             .catch(error => {
-                document.getElementById('loading').style.display = 'none';
+                loading.style.display = 'none';
                 alert('Error: ' + error);
+                processBtn.disabled = false;
             });
         });
     </script>

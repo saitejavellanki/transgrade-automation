@@ -2,3 +2,4 @@ flask
 pdf2image
 Pillow
 requests
+google-generativeai>=0.3.2
