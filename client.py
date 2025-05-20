@@ -57,6 +57,7 @@ def upload_pdf():
         "pages": extracted_data  # Optional: you can flatten this if needed
     }
 
+    # Call restructure-answers endpoint
     restructure_files = {
         'key': (key_file.filename, key_file.stream, 'application/json'),
         'student': ('student.json', json.dumps(combined_student_ocr), 'application/json')
@@ -67,16 +68,21 @@ def upload_pdf():
         files=restructure_files
     )
 
+    restructure_result = None
     if restructure_response.status_code == 200:
-       restructure_result = {
-        "raw_response": restructure_response.text
-    }
+        # Try to parse as JSON if possible, otherwise keep as text
+        try:
+            restructure_result = restructure_response.json()
+        except json.JSONDecodeError:
+            # If it's not JSON, store the raw text
+            restructure_result = {
+                "raw_response": restructure_response.text
+            }
     else:
-       restructure_result = {
-        "error": f"Status {restructure_response.status_code}",
-        "details": restructure_response.text
-    }
-
+        restructure_result = {
+            "error": f"Status {restructure_response.status_code}",
+            "details": restructure_response.text
+        }
 
     page_results = [
         {
@@ -87,10 +93,7 @@ def upload_pdf():
         for idx in range(len(extracted_data))
     ]
 
-    return render_template('upload.html', result=page_results, restructure=restructure_result)
-
-
+    return render_template('upload.html', page_results=page_results, restructure_result=restructure_result)
 
 if __name__ == '__main__':
     app.run(debug=False, port=5000)
-

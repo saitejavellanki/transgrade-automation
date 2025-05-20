@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,6 +86,57 @@
       100% { transform: rotate(360deg); }
     }
 
+    .results-section {
+      margin-top: 40px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab-navigation {
+      display: flex;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .tab-button {
+      background-color: #f1f1f1;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-right: 5px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .tab-button.active {
+      background-color: #3498db;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .answer-section {
+      padding: 15px;
+      margin-bottom: 15px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      border-left: 4px solid #3498db;
+    }
+
+    .student-answer {
+      background-color: #e8f4fc;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
   </style>
 </head>
 <body>
@@ -102,31 +152,97 @@
     <div class="loader" id="loader"></div>
   </form>
 
-  {% if result %}
-    <h3>OCR & LayoutLM Results (Page-wise)</h3>
-    {% for page in result %}
-      <h4>Page {{ page.page }}</h4>
+  {% if restructure_result or page_results %}
+  <div class="results-section">
+    <div class="tab-navigation">
+      <button class="tab-button active" onclick="openTab(event, 'restructure-tab')">Restructured Answers</button>
+      <button class="tab-button" onclick="openTab(event, 'ocr-tab')">OCR & LayoutLM Results</button>
+    </div>
 
-      <strong>Word-Level OCR:</strong>
-      <pre>{{ page.ocr | tojson(indent=2) }}</pre>
+    <!-- Restructure Tab -->
+    <div id="restructure-tab" class="tab-content active">
+      <h3>Restructured Student Answers</h3>
+      
+      {% if restructure_result %}
+        {% if restructure_result.error %}
+          <p>Error: {{ restructure_result.error }}</p>
+          <pre>{{ restructure_result.details }}</pre>
+        {% elif restructure_result.raw_response %}
+          <!-- Try to display as JSON if possible, otherwise show as text -->
+          <div id="restructured-content">
+            <pre>{{ restructure_result.raw_response }}</pre>
+          </div>
+        {% else %}
+          <!-- Display structured JSON results -->
+          <pre>{{ restructure_result | tojson(indent=2) }}</pre>
+        {% endif %}
+      {% else %}
+        <p>No restructuring results available.</p>
+      {% endif %}
+    </div>
 
-      <strong>LayoutLM Format:</strong>
-      <pre>{{ page.layoutlm | tojson(indent=2) }}</pre>
+    <!-- OCR Tab -->
+    <div id="ocr-tab" class="tab-content">
+      <h3>OCR & LayoutLM Results (Page-wise)</h3>
+      {% if page_results %}
+        {% for page in page_results %}
+          <h4>Page {{ page.page }}</h4>
 
-      <hr>
-    {% endfor %}
+          <strong>Word-Level OCR:</strong>
+          <pre>{{ page.ocr | tojson(indent=2) }}</pre>
+
+          <strong>LayoutLM Format:</strong>
+          <pre>{{ page.layoutlm | tojson(indent=2) }}</pre>
+
+          <hr>
+        {% endfor %}
+      {% else %}
+        <p>No OCR results available.</p>
+      {% endif %}
+    </div>
+  </div>
   {% endif %}
-
-  {% if result %}
-  <h3>Restructure API Raw Response</h3>
-  <pre>{{ result.raw_response }}</pre>
-{% endif %}
-
 
   <script>
     function showLoader() {
       document.getElementById('loader').style.display = 'block';
     }
+
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      
+      // Hide all tab content
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+      }
+      
+      // Remove "active" class from all tab buttons
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      
+      // Show the current tab and add "active" class to the button
+      document.getElementById(tabName).className += " active";
+      evt.currentTarget.className += " active";
+    }
+
+    // Try to parse and display JSON response in a formatted way if it's valid JSON
+    document.addEventListener('DOMContentLoaded', function() {
+      const restructuredContent = document.getElementById('restructured-content');
+      if (restructuredContent) {
+        try {
+          const textContent = restructuredContent.querySelector('pre').textContent;
+          const jsonData = JSON.parse(textContent);
+          
+          // Format the JSON nicely
+          restructuredContent.querySelector('pre').textContent = JSON.stringify(jsonData, null, 2);
+        } catch(e) {
+          // If not valid JSON, leave as is - it's probably already formatted text
+        }
+      }
+    });
   </script>
 </body>
 </html>

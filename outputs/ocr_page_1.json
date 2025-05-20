@@ -1,0 +1,1646 @@
+[
+  {
+    "boundingBox": [
+      1078,
+      142,
+      1291,
+      204
+    ],
+    "confidence": 0.997,
+    "id": 0,
+    "line_text": "ANSWER SHEET",
+    "text": "ANSWER"
+  },
+  {
+    "boundingBox": [
+      1320,
+      133,
+      1492,
+      195
+    ],
+    "confidence": 0.998,
+    "id": 1,
+    "line_text": "ANSWER SHEET",
+    "text": "SHEET"
+  },
+  {
+    "boundingBox": [
+      709,
+      234,
+      911,
+      354
+    ],
+    "confidence": 0.998,
+    "id": 0,
+    "line_text": "SRI SAI HIGH SCHOOL",
+    "text": "SRI"
+  },
+  {
+    "boundingBox": [
+      929,
+      221,
+      1139,
+      344
+    ],
+    "confidence": 0.998,
+    "id": 1,
+    "line_text": "SRI SAI HIGH SCHOOL",
+    "text": "SAI"
+  },
+  {
+    "boundingBox": [
+      1157,
+      206,
+      1445,
+      333
+    ],
+    "confidence": 0.967,
+    "id": 2,
+    "line_text": "SRI SAI HIGH SCHOOL",
+    "text": "HIGH"
+  },
+  {
+    "boundingBox": [
+      1482,
+      184,
+      1982,
+      318
+    ],
+    "confidence": 0.997,
+    "id": 3,
+    "line_text": "SRI SAI HIGH SCHOOL",
+    "text": "SCHOOL"
+  },
+  {
+    "boundingBox": [
+      884,
+      331,
+      1133,
+      397
+    ],
+    "confidence": 0.994,
+    "id": 0,
+    "line_text": "GOLIVARI STREET, PERALA - 523 157",
+    "text": "GOLIVARI"
+  },
+  {
+    "boundingBox": [
+      1143,
+      320,
+      1361,
+      390
+    ],
+    "confidence": 0.996,
+    "id": 1,
+    "line_text": "GOLIVARI STREET, PERALA - 523 157",
+    "text": "STREET,"
+  },
+  {
+    "boundingBox": [
+      1371,
+      310,
+      1591,
+      382
+    ],
+    "confidence": 0.997,
+    "id": 2,
+    "line_text": "GOLIVARI STREET, PERALA - 523 157",
+    "text": "PERALA"
+  },
+  {
+    "boundingBox": [
+      1603,
+      310,
+      1619,
+      372
+    ],
+    "confidence": 0.995,
+    "id": 3,
+    "line_text": "GOLIVARI STREET, PERALA - 523 157",
+    "text": "-"
+  },
+  {
+    "boundingBox": [
+      1631,
+      307,
+      1720,
+      371
+    ],
+    "confidence": 0.998,
+    "id": 4,
+    "line_text": "GOLIVARI STREET, PERALA - 523 157",
+    "text": "523"
+  },
+  {
+    "boundingBox": [
+      1731,
+      304,
+      1825,
+      366
+    ],
+    "confidence": 0.998,
+    "id": 5,
+    "line_text": "GOLIVARI STREET, PERALA - 523 157",
+    "text": "157"
+  },
+  {
+    "boundingBox": [
+      597,
+      445,
+      716,
+      512
+    ],
+    "confidence": 0.994,
+    "id": 0,
+    "line_text": "Name SK. Nasreen Roll No. 6",
+    "text": "Name"
+  },
+  {
+    "boundingBox": [
+      741,
+      435,
+      843,
+      506
+    ],
+    "confidence": 0.806,
+    "id": 1,
+    "line_text": "Name SK. Nasreen Roll No. 6",
+    "text": "SK."
+  },
+  {
+    "boundingBox": [
+      876,
+      413,
+      1157,
+      499
+    ],
+    "confidence": 0.6,
+    "id": 2,
+    "line_text": "Name SK. Nasreen Roll No. 6",
+    "text": "Nasreen"
+  },
+  {
+    "boundingBox": [
+      1571,
+      388,
+      1638,
+      458
+    ],
+    "confidence": 0.94,
+    "id": 3,
+    "line_text": "Name SK. Nasreen Roll No. 6",
+    "text": "Roll"
+  },
+  {
+    "boundingBox": [
+      1647,
+      384,
+      1726,
+      453
+    ],
+    "confidence": 0.991,
+    "id": 4,
+    "line_text": "Name SK. Nasreen Roll No. 6",
+    "text": "No."
+  },
+  {
+    "boundingBox": [
+      1783,
+      380,
+      1836,
+      444
+    ],
+    "confidence": 0.98,
+    "id": 5,
+    "line_text": "Name SK. Nasreen Roll No. 6",
+    "text": "6"
+  },
+  {
+    "boundingBox": [
+      2061,
+      357,
+      2256,
+      412
+    ],
+    "confidence": 0.994,
+    "id": 0,
+    "line_text": "MARKS",
+    "text": "MARKS"
+  },
+  {
+    "boundingBox": [
+      597,
+      537,
+      711,
+      594
+    ],
+    "confidence": 0.991,
+    "id": 0,
+    "line_text": "Class",
+    "text": "Class"
+  },
+  {
+    "boundingBox": [
+      806,
+      496,
+      931,
+      574
+    ],
+    "confidence": 0.988,
+    "id": 0,
+    "line_text": "10th",
+    "text": "10th"
+  },
+  {
+    "boundingBox": [
+      1079,
+      505,
+      1233,
+      579
+    ],
+    "confidence": 0.791,
+    "id": 0,
+    "line_text": "Subject social",
+    "text": "Subject"
+  },
+  {
+    "boundingBox": [
+      1275,
+      484,
+      1478,
+      565
+    ],
+    "confidence": 0.997,
+    "id": 1,
+    "line_text": "Subject social",
+    "text": "social"
+  },
+  {
+    "boundingBox": [
+      1606,
+      473,
+      1706,
+      547
+    ],
+    "confidence": 0.992,
+    "id": 0,
+    "line_text": "Date 28/4/25",
+    "text": "Date"
+  },
+  {
+    "boundingBox": [
+      1724,
+      457,
+      1996,
+      541
+    ],
+    "confidence": 0.997,
+    "id": 1,
+    "line_text": "Date 28/4/25",
+    "text": "28/4/25"
+  },
+  {
+    "boundingBox": [
+      2130,
+      480,
+      2159,
+      514
+    ],
+    "confidence": 0.706,
+    "id": 0,
+    "line_text": "-",
+    "text": "-"
+  },
+  {
+    "boundingBox": [
+      384,
+      583,
+      510,
+      622
+    ],
+    "confidence": 0.996,
+    "id": 0,
+    "line_text": "PERALA",
+    "text": "PERALA"
+  },
+  {
+    "boundingBox": [
+      297,
+      638,
+      521,
+      687
+    ],
+    "confidence": 0.991,
+    "id": 0,
+    "line_text": "Examination",
+    "text": "Examination"
+  },
+  {
+    "boundingBox": [
+      605,
+      605,
+      703,
+      673
+    ],
+    "confidence": 0.697,
+    "id": 0,
+    "line_text": "SKP",
+    "text": "SKP"
+  },
+  {
+    "boundingBox": [
+      786,
+      600,
+      929,
+      665
+    ],
+    "confidence": 0.979,
+    "id": 0,
+    "line_text": "test",
+    "text": "test"
+  },
+  {
+    "boundingBox": [
+      1045,
+      601,
+      1211,
+      659
+    ],
+    "confidence": 0.958,
+    "id": 0,
+    "line_text": "Invigilator Signature",
+    "text": "Invigilator"
+  },
+  {
+    "boundingBox": [
+      1220,
+      598,
+      1395,
+      652
+    ],
+    "confidence": 0.995,
+    "id": 1,
+    "line_text": "Invigilator Signature",
+    "text": "Signature"
+  },
+  {
+    "boundingBox": [
+      198,
+      869,
+      256,
+      952
+    ],
+    "confidence": 0.866,
+    "id": 0,
+    "line_text": "I",
+    "text": "I"
+  },
+  {
+    "boundingBox": [
+      220,
+      995,
+      265,
+      1080
+    ],
+    "confidence": 0.66,
+    "id": 0,
+    "line_text": "1. A)",
+    "text": "1."
+  },
+  {
+    "boundingBox": [
+      288,
+      994,
+      379,
+      1079
+    ],
+    "confidence": 0.994,
+    "id": 1,
+    "line_text": "1. A)",
+    "text": "A)"
+  },
+  {
+    "boundingBox": [
+      425,
+      974,
+      821,
+      1071
+    ],
+    "confidence": 0.939,
+    "id": 0,
+    "line_text": "Everything.",
+    "text": "Everything."
+  },
+  {
+    "boundingBox": [
+      996,
+      951,
+      1335,
+      1051
+    ],
+    "confidence": 0.994,
+    "id": 0,
+    "line_text": "avaliable in our environment",
+    "text": "avaliable"
+  },
+  {
+    "boundingBox": [
+      1427,
+      942,
+      1524,
+      1029
+    ],
+    "confidence": 0.996,
+    "id": 1,
+    "line_text": "avaliable in our environment",
+    "text": "in"
+  },
+  {
+    "boundingBox": [
+      1616,
+      932,
+      1754,
+      1020
+    ],
+    "confidence": 0.985,
+    "id": 2,
+    "line_text": "avaliable in our environment",
+    "text": "our"
+  },
+  {
+    "boundingBox": [
+      1847,
+      910,
+      2310,
+      1008
+    ],
+    "confidence": 0.099,
+    "id": 3,
+    "line_text": "avaliable in our environment",
+    "text": "environment"
+  },
+  {
+    "boundingBox": [
+      418,
+      1099,
+      607,
+      1187
+    ],
+    "confidence": 0.996,
+    "id": 0,
+    "line_text": "which can be used to sustify our needs",
+    "text": "which"
+  },
+  {
+    "boundingBox": [
+      740,
+      1087,
+      888,
+      1175
+    ],
+    "confidence": 0.998,
+    "id": 1,
+    "line_text": "which can be used to sustify our needs",
+    "text": "can"
+  },
+  {
+    "boundingBox": [
+      979,
+      1079,
+      1085,
+      1165
+    ],
+    "confidence": 0.991,
+    "id": 2,
+    "line_text": "which can be used to sustify our needs",
+    "text": "be"
+  },
+  {
+    "boundingBox": [
+      1176,
+      1067,
+      1355,
+      1156
+    ],
+    "confidence": 0.993,
+    "id": 3,
+    "line_text": "which can be used to sustify our needs",
+    "text": "used"
+  },
+  {
+    "boundingBox": [
+      1446,
+      1059,
+      1531,
+      1143
+    ],
+    "confidence": 0.984,
+    "id": 4,
+    "line_text": "which can be used to sustify our needs",
+    "text": "to"
+  },
+  {
+    "boundingBox": [
+      1633,
+      1041,
+      1905,
+      1133
+    ],
+    "confidence": 0.711,
+    "id": 5,
+    "line_text": "which can be used to sustify our needs",
+    "text": "sustify"
+  },
+  {
+    "boundingBox": [
+      2006,
+      1030,
+      2133,
+      1113
+    ],
+    "confidence": 0.95,
+    "id": 6,
+    "line_text": "which can be used to sustify our needs",
+    "text": "our"
+  },
+  {
+    "boundingBox": [
+      2203,
+      1017,
+      2392,
+      1102
+    ],
+    "confidence": 0.994,
+    "id": 7,
+    "line_text": "which can be used to sustify our needs",
+    "text": "needs"
+  },
+  {
+    "boundingBox": [
+      417,
+      1204,
+      719,
+      1299
+    ],
+    "confidence": 0.994,
+    "id": 0,
+    "line_text": "Provided it is tecogical acessible, economically",
+    "text": "Provided"
+  },
+  {
+    "boundingBox": [
+      825,
+      1197,
+      923,
+      1283
+    ],
+    "confidence": 0.997,
+    "id": 1,
+    "line_text": "Provided it is tecogical acessible, economically",
+    "text": "it"
+  },
+  {
+    "boundingBox": [
+      1008,
+      1190,
+      1095,
+      1276
+    ],
+    "confidence": 0.995,
+    "id": 2,
+    "line_text": "Provided it is tecogical acessible, economically",
+    "text": "is"
+  },
+  {
+    "boundingBox": [
+      1190,
+      1172,
+      1525,
+      1268
+    ],
+    "confidence": 0.98,
+    "id": 3,
+    "line_text": "Provided it is tecogical acessible, economically",
+    "text": "tecogical"
+  },
+  {
+    "boundingBox": [
+      1631,
+      1148,
+      2079,
+      1249
+    ],
+    "confidence": 0.105,
+    "id": 4,
+    "line_text": "Provided it is tecogical acessible, economically",
+    "text": "acessible,"
+  },
+  {
+    "boundingBox": [
+      2092,
+      1130,
+      2470,
+      1228
+    ],
+    "confidence": 0.987,
+    "id": 5,
+    "line_text": "Provided it is tecogical acessible, economically",
+    "text": "economically"
+  },
+  {
+    "boundingBox": [
+      419,
+      1319,
+      870,
+      1415
+    ],
+    "confidence": 0.885,
+    "id": 0,
+    "line_text": "feessiable, culturaly",
+    "text": "feessiable,"
+  },
+  {
+    "boundingBox": [
+      882,
+      1299,
+      1221,
+      1396
+    ],
+    "confidence": 0.098,
+    "id": 1,
+    "line_text": "feessiable, culturaly",
+    "text": "culturaly"
+  },
+  {
+    "boundingBox": [
+      1312,
+      1282,
+      1572,
+      1375
+    ],
+    "confidence": 0.722,
+    "id": 0,
+    "line_text": "actable can be termed",
+    "text": "actable"
+  },
+  {
+    "boundingBox": [
+      1657,
+      1271,
+      1804,
+      1361
+    ],
+    "confidence": 0.995,
+    "id": 1,
+    "line_text": "actable can be termed",
+    "text": "can"
+  },
+  {
+    "boundingBox": [
+      1924,
+      1257,
+      2036,
+      1348
+    ],
+    "confidence": 0.947,
+    "id": 2,
+    "line_text": "actable can be termed",
+    "text": "be"
+  },
+  {
+    "boundingBox": [
+      2113,
+      1231,
+      2390,
+      1337
+    ],
+    "confidence": 0.939,
+    "id": 3,
+    "line_text": "actable can be termed",
+    "text": "termed"
+  },
+  {
+    "boundingBox": [
+      432,
+      1450,
+      531,
+      1525
+    ],
+    "confidence": 0.997,
+    "id": 0,
+    "line_text": "as resource.",
+    "text": "as"
+  },
+  {
+    "boundingBox": [
+      649,
+      1426,
+      1039,
+      1515
+    ],
+    "confidence": 0.744,
+    "id": 1,
+    "line_text": "as resource.",
+    "text": "resource."
+  },
+  {
+    "boundingBox": [
+      216,
+      1662,
+      312,
+      1784
+    ],
+    "confidence": 0.72,
+    "id": 0,
+    "line_text": "2.",
+    "text": "2."
+  },
+  {
+    "boundingBox": [
+      437,
+      1657,
+      796,
+      1753
+    ],
+    "confidence": 0.947,
+    "id": 0,
+    "line_text": "Jharkand",
+    "text": "Jharkand"
+  },
+  {
+    "boundingBox": [
+      895,
+      1651,
+      932,
+      1740
+    ],
+    "confidence": 0.909,
+    "id": 0,
+    "line_text": ", chhattisgarh",
+    "text": ","
+  },
+  {
+    "boundingBox": [
+      949,
+      1619,
+      1427,
+      1740
+    ],
+    "confidence": 0.938,
+    "id": 1,
+    "line_text": ", chhattisgarh",
+    "text": "chhattisgarh"
+  },
+  {
+    "boundingBox": [
+      1581,
+      1609,
+      1749,
+      1707
+    ],
+    "confidence": 0.995,
+    "id": 0,
+    "line_text": "and Madhya pradesh",
+    "text": "and"
+  },
+  {
+    "boundingBox": [
+      1820,
+      1585,
+      2101,
+      1696
+    ],
+    "confidence": 0.998,
+    "id": 1,
+    "line_text": "and Madhya pradesh",
+    "text": "Madhya"
+  },
+  {
+    "boundingBox": [
+      2159,
+      1564,
+      2466,
+      1680
+    ],
+    "confidence": 0.955,
+    "id": 2,
+    "line_text": "and Madhya pradesh",
+    "text": "pradesh"
+  },
+  {
+    "boundingBox": [
+      362,
+      1808,
+      396,
+      1848
+    ],
+    "confidence": 0.168,
+    "id": 0,
+    "line_text": "2.",
+    "text": "2."
+  },
+  {
+    "boundingBox": [
+      227,
+      1898,
+      305,
+      1989
+    ],
+    "confidence": 0.993,
+    "id": 0,
+    "line_text": "3. A)",
+    "text": "3."
+  },
+  {
+    "boundingBox": [
+      328,
+      1894,
+      418,
+      1989
+    ],
+    "confidence": 0.997,
+    "id": 1,
+    "line_text": "3. A)",
+    "text": "A)"
+  },
+  {
+    "boundingBox": [
+      419,
+      1863,
+      886,
+      1993
+    ],
+    "confidence": 0.76,
+    "id": 0,
+    "line_text": "Brundtland",
+    "text": "Brundtland"
+  },
+  {
+    "boundingBox": [
+      1072,
+      1857,
+      1465,
+      1952
+    ],
+    "confidence": 0.995,
+    "id": 0,
+    "line_text": "commission Report",
+    "text": "commission"
+  },
+  {
+    "boundingBox": [
+      1598,
+      1843,
+      1836,
+      1929
+    ],
+    "confidence": 0.995,
+    "id": 1,
+    "line_text": "commission Report",
+    "text": "Report"
+  },
+  {
+    "boundingBox": [
+      241,
+      2133,
+      304,
+      2214
+    ],
+    "confidence": 0.666,
+    "id": 0,
+    "line_text": "4. A) 3.28 Million",
+    "text": "4."
+  },
+  {
+    "boundingBox": [
+      324,
+      2120,
+      432,
+      2219
+    ],
+    "confidence": 0.953,
+    "id": 1,
+    "line_text": "4. A) 3.28 Million",
+    "text": "A)"
+  },
+  {
+    "boundingBox": [
+      461,
+      2103,
+      678,
+      2220
+    ],
+    "confidence": 0.987,
+    "id": 2,
+    "line_text": "4. A) 3.28 Million",
+    "text": "3.28"
+  },
+  {
+    "boundingBox": [
+      788,
+      2097,
+      1035,
+      2217
+    ],
+    "confidence": 0.992,
+    "id": 3,
+    "line_text": "4. A) 3.28 Million",
+    "text": "Million"
+  },
+  {
+    "boundingBox": [
+      1198,
+      2089,
+      1497,
+      2172
+    ],
+    "confidence": 0.865,
+    "id": 0,
+    "line_text": "S2.KM",
+    "text": "S2.KM"
+  },
+  {
+    "boundingBox": [
+      258,
+      2361,
+      323,
+      2441
+    ],
+    "confidence": 0.685,
+    "id": 0,
+    "line_text": "5- A) At Present",
+    "text": "5-"
+  },
+  {
+    "boundingBox": [
+      354,
+      2354,
+      450,
+      2438
+    ],
+    "confidence": 0.744,
+    "id": 1,
+    "line_text": "5- A) At Present",
+    "text": "A)"
+  },
+  {
+    "boundingBox": [
+      470,
+      2349,
+      556,
+      2434
+    ],
+    "confidence": 0.753,
+    "id": 2,
+    "line_text": "5- A) At Present",
+    "text": "At"
+  },
+  {
+    "boundingBox": [
+      670,
+      2333,
+      957,
+      2426
+    ],
+    "confidence": 0.616,
+    "id": 3,
+    "line_text": "5- A) At Present",
+    "text": "Present"
+  },
+  {
+    "boundingBox": [
+      1083,
+      2313,
+      1275,
+      2403
+    ],
+    "confidence": 0.983,
+    "id": 0,
+    "line_text": "there are about 180 Million KM",
+    "text": "there"
+  },
+  {
+    "boundingBox": [
+      1380,
+      2305,
+      1507,
+      2394
+    ],
+    "confidence": 0.974,
+    "id": 1,
+    "line_text": "there are about 180 Million KM",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      1613,
+      2292,
+      1845,
+      2384
+    ],
+    "confidence": 0.997,
+    "id": 2,
+    "line_text": "there are about 180 Million KM",
+    "text": "about"
+  },
+  {
+    "boundingBox": [
+      1951,
+      2283,
+      2067,
+      2368
+    ],
+    "confidence": 0.984,
+    "id": 3,
+    "line_text": "there are about 180 Million KM",
+    "text": "180"
+  },
+  {
+    "boundingBox": [
+      2142,
+      2270,
+      2363,
+      2358
+    ],
+    "confidence": 0.986,
+    "id": 4,
+    "line_text": "there are about 180 Million KM",
+    "text": "Million"
+  },
+  {
+    "boundingBox": [
+      2407,
+      2263,
+      2501,
+      2342
+    ],
+    "confidence": 0.984,
+    "id": 5,
+    "line_text": "there are about 180 Million KM",
+    "text": "KM"
+  },
+  {
+    "boundingBox": [
+      490,
+      2460,
+      634,
+      2547
+    ],
+    "confidence": 0.979,
+    "id": 0,
+    "line_text": "hea hectares is degraded land in india",
+    "text": "hea"
+  },
+  {
+    "boundingBox": [
+      692,
+      2437,
+      1014,
+      2540
+    ],
+    "confidence": 0.886,
+    "id": 1,
+    "line_text": "hea hectares is degraded land in india",
+    "text": "hectares"
+  },
+  {
+    "boundingBox": [
+      1119,
+      2426,
+      1216,
+      2521
+    ],
+    "confidence": 0.998,
+    "id": 2,
+    "line_text": "hea hectares is degraded land in india",
+    "text": "is"
+  },
+  {
+    "boundingBox": [
+      1309,
+      2403,
+      1655,
+      2513
+    ],
+    "confidence": 0.916,
+    "id": 3,
+    "line_text": "hea hectares is degraded land in india",
+    "text": "degraded"
+  },
+  {
+    "boundingBox": [
+      1806,
+      2386,
+      1999,
+      2490
+    ],
+    "confidence": 0.979,
+    "id": 4,
+    "line_text": "hea hectares is degraded land in india",
+    "text": "land"
+  },
+  {
+    "boundingBox": [
+      2091,
+      2377,
+      2189,
+      2475
+    ],
+    "confidence": 0.997,
+    "id": 5,
+    "line_text": "hea hectares is degraded land in india",
+    "text": "in"
+  },
+  {
+    "boundingBox": [
+      2269,
+      2363,
+      2486,
+      2466
+    ],
+    "confidence": 0.936,
+    "id": 6,
+    "line_text": "hea hectares is degraded land in india",
+    "text": "india"
+  },
+  {
+    "boundingBox": [
+      274,
+      2687,
+      351,
+      2769
+    ],
+    "confidence": 0.848,
+    "id": 0,
+    "line_text": "II",
+    "text": "II"
+  },
+  {
+    "boundingBox": [
+      278,
+      2798,
+      318,
+      2915
+    ],
+    "confidence": 0.703,
+    "id": 0,
+    "line_text": "6. A) 1) These are resources",
+    "text": "6."
+  },
+  {
+    "boundingBox": [
+      339,
+      2793,
+      437,
+      2913
+    ],
+    "confidence": 0.707,
+    "id": 1,
+    "line_text": "6. A) 1) These are resources",
+    "text": "A)"
+  },
+  {
+    "boundingBox": [
+      458,
+      2790,
+      527,
+      2908
+    ],
+    "confidence": 0.814,
+    "id": 2,
+    "line_text": "6. A) 1) These are resources",
+    "text": "1)"
+  },
+  {
+    "boundingBox": [
+      548,
+      2779,
+      800,
+      2903
+    ],
+    "confidence": 0.978,
+    "id": 3,
+    "line_text": "6. A) 1) These are resources",
+    "text": "These"
+  },
+  {
+    "boundingBox": [
+      845,
+      2771,
+      1008,
+      2890
+    ],
+    "confidence": 0.994,
+    "id": 4,
+    "line_text": "6. A) 1) These are resources",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      1084,
+      2756,
+      1439,
+      2881
+    ],
+    "confidence": 0.97,
+    "id": 5,
+    "line_text": "6. A) 1) These are resources",
+    "text": "resources"
+  },
+  {
+    "boundingBox": [
+      1536,
+      2730,
+      1757,
+      2857
+    ],
+    "confidence": 0.983,
+    "id": 0,
+    "line_text": "which are regulated",
+    "text": "which"
+  },
+  {
+    "boundingBox": [
+      1848,
+      2718,
+      1995,
+      2839
+    ],
+    "confidence": 0.986,
+    "id": 1,
+    "line_text": "which are regulated",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      2056,
+      2701,
+      2412,
+      2829
+    ],
+    "confidence": 0.989,
+    "id": 2,
+    "line_text": "which are regulated",
+    "text": "regulated"
+  },
+  {
+    "boundingBox": [
+      518,
+      2919,
+      610,
+      3008
+    ],
+    "confidence": 0.995,
+    "id": 0,
+    "line_text": "by the international resources.",
+    "text": "by"
+  },
+  {
+    "boundingBox": [
+      695,
+      2905,
+      828,
+      2999
+    ],
+    "confidence": 0.986,
+    "id": 1,
+    "line_text": "by the international resources.",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      926,
+      2878,
+      1420,
+      2987
+    ],
+    "confidence": 0.945,
+    "id": 2,
+    "line_text": "by the international resources.",
+    "text": "international"
+  },
+  {
+    "boundingBox": [
+      1519,
+      2867,
+      1915,
+      2959
+    ],
+    "confidence": 0.943,
+    "id": 3,
+    "line_text": "by the international resources.",
+    "text": "resources."
+  },
+  {
+    "boundingBox": [
+      478,
+      3032,
+      542,
+      3123
+    ],
+    "confidence": 0.863,
+    "id": 0,
+    "line_text": "2) Examples are the oceanic resources are",
+    "text": "2)"
+  },
+  {
+    "boundingBox": [
+      555,
+      3017,
+      879,
+      3120
+    ],
+    "confidence": 0.961,
+    "id": 1,
+    "line_text": "2) Examples are the oceanic resources are",
+    "text": "Examples"
+  },
+  {
+    "boundingBox": [
+      1005,
+      3006,
+      1136,
+      3097
+    ],
+    "confidence": 0.996,
+    "id": 2,
+    "line_text": "2) Examples are the oceanic resources are",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      1219,
+      2996,
+      1361,
+      3086
+    ],
+    "confidence": 0.991,
+    "id": 3,
+    "line_text": "2) Examples are the oceanic resources are",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      1466,
+      2979,
+      1758,
+      3074
+    ],
+    "confidence": 0.707,
+    "id": 4,
+    "line_text": "2) Examples are the oceanic resources are",
+    "text": "oceanic"
+  },
+  {
+    "boundingBox": [
+      1830,
+      2964,
+      2134,
+      3055
+    ],
+    "confidence": 0.723,
+    "id": 5,
+    "line_text": "2) Examples are the oceanic resources are",
+    "text": "resources"
+  },
+  {
+    "boundingBox": [
+      2248,
+      2955,
+      2380,
+      3033
+    ],
+    "confidence": 0.997,
+    "id": 6,
+    "line_text": "2) Examples are the oceanic resources are",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      526,
+      3133,
+      791,
+      3234
+    ],
+    "confidence": 0.88,
+    "id": 0,
+    "line_text": "beyond 200km of the Exclusive economic",
+    "text": "beyond"
+  },
+  {
+    "boundingBox": [
+      918,
+      3114,
+      1162,
+      3211
+    ],
+    "confidence": 0.967,
+    "id": 1,
+    "line_text": "beyond 200km of the Exclusive economic",
+    "text": "200km"
+  },
+  {
+    "boundingBox": [
+      1267,
+      3104,
+      1358,
+      3192
+    ],
+    "confidence": 0.997,
+    "id": 2,
+    "line_text": "beyond 200km of the Exclusive economic",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1442,
+      3094,
+      1577,
+      3183
+    ],
+    "confidence": 0.993,
+    "id": 3,
+    "line_text": "beyond 200km of the Exclusive economic",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      1660,
+      3074,
+      2003,
+      3171
+    ],
+    "confidence": 0.771,
+    "id": 4,
+    "line_text": "beyond 200km of the Exclusive economic",
+    "text": "Exclusive"
+  },
+  {
+    "boundingBox": [
+      2086,
+      3056,
+      2407,
+      3151
+    ],
+    "confidence": 0.988,
+    "id": 5,
+    "line_text": "beyond 200km of the Exclusive economic",
+    "text": "economic"
+  },
+  {
+    "boundingBox": [
+      530,
+      3258,
+      717,
+      3345
+    ],
+    "confidence": 0.776,
+    "id": 0,
+    "line_text": "zone of open ocean and no individual",
+    "text": "zone"
+  },
+  {
+    "boundingBox": [
+      823,
+      3248,
+      912,
+      3331
+    ],
+    "confidence": 0.994,
+    "id": 1,
+    "line_text": "zone of open ocean and no individual",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1028,
+      3232,
+      1205,
+      3321
+    ],
+    "confidence": 0.968,
+    "id": 2,
+    "line_text": "zone of open ocean and no individual",
+    "text": "open"
+  },
+  {
+    "boundingBox": [
+      1310,
+      3214,
+      1531,
+      3307
+    ],
+    "confidence": 0.686,
+    "id": 3,
+    "line_text": "zone of open ocean and no individual",
+    "text": "ocean"
+  },
+  {
+    "boundingBox": [
+      1645,
+      3201,
+      1802,
+      3292
+    ],
+    "confidence": 0.986,
+    "id": 4,
+    "line_text": "zone of open ocean and no individual",
+    "text": "and"
+  },
+  {
+    "boundingBox": [
+      1883,
+      3192,
+      1987,
+      3281
+    ],
+    "confidence": 0.953,
+    "id": 5,
+    "line_text": "zone of open ocean and no individual",
+    "text": "no"
+  },
+  {
+    "boundingBox": [
+      2046,
+      3170,
+      2432,
+      3274
+    ],
+    "confidence": 0.992,
+    "id": 6,
+    "line_text": "zone of open ocean and no individual",
+    "text": "individual"
+  },
+  {
+    "boundingBox": [
+      538,
+      3365,
+      882,
+      3458
+    ],
+    "confidence": 0.983,
+    "id": 0,
+    "line_text": "resources of concurrence of international",
+    "text": "resources"
+  },
+  {
+    "boundingBox": [
+      1014,
+      3352,
+      1104,
+      3433
+    ],
+    "confidence": 0.997,
+    "id": 1,
+    "line_text": "resources of concurrence of international",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1246,
+      3324,
+      1649,
+      3420
+    ],
+    "confidence": 0.942,
+    "id": 2,
+    "line_text": "resources of concurrence of international",
+    "text": "concurrence"
+  },
+  {
+    "boundingBox": [
+      1761,
+      3314,
+      1851,
+      3396
+    ],
+    "confidence": 0.994,
+    "id": 3,
+    "line_text": "resources of concurrence of international",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1983,
+      3288,
+      2467,
+      3386
+    ],
+    "confidence": 0.98,
+    "id": 4,
+    "line_text": "resources of concurrence of international",
+    "text": "international"
+  },
+  {
+    "boundingBox": [
+      569,
+      3473,
+      1032,
+      3566
+    ],
+    "confidence": 0.944,
+    "id": 0,
+    "line_text": "instiuation.",
+    "text": "instiuation."
+  }
+]

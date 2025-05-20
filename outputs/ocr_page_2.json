@@ -1,0 +1,1394 @@
+[
+  {
+    "boundingBox": [
+      151,
+      166,
+      264,
+      259
+    ],
+    "confidence": 0.598,
+    "id": 0,
+    "line_text": "III",
+    "text": "III"
+  },
+  {
+    "boundingBox": [
+      303,
+      312,
+      446,
+      401
+    ],
+    "confidence": 0.998,
+    "id": 0,
+    "line_text": "The following are the features of arid soil",
+    "text": "The"
+  },
+  {
+    "boundingBox": [
+      534,
+      323,
+      869,
+      425
+    ],
+    "confidence": 0.994,
+    "id": 1,
+    "line_text": "The following are the features of arid soil",
+    "text": "following"
+  },
+  {
+    "boundingBox": [
+      958,
+      342,
+      1098,
+      437
+    ],
+    "confidence": 0.999,
+    "id": 2,
+    "line_text": "The following are the features of arid soil",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      1152,
+      351,
+      1292,
+      447
+    ],
+    "confidence": 0.985,
+    "id": 3,
+    "line_text": "The following are the features of arid soil",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      1359,
+      361,
+      1669,
+      466
+    ],
+    "confidence": 0.988,
+    "id": 4,
+    "line_text": "The following are the features of arid soil",
+    "text": "features"
+  },
+  {
+    "boundingBox": [
+      1783,
+      381,
+      1875,
+      475
+    ],
+    "confidence": 0.992,
+    "id": 5,
+    "line_text": "The following are the features of arid soil",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1932,
+      388,
+      2081,
+      484
+    ],
+    "confidence": 0.837,
+    "id": 6,
+    "line_text": "The following are the features of arid soil",
+    "text": "arid"
+  },
+  {
+    "boundingBox": [
+      2172,
+      400,
+      2309,
+      494
+    ],
+    "confidence": 0.983,
+    "id": 7,
+    "line_text": "The following are the features of arid soil",
+    "text": "soil"
+  },
+  {
+    "boundingBox": [
+      156,
+      412,
+      242,
+      501
+    ],
+    "confidence": 0.733,
+    "id": 0,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "7A)"
+  },
+  {
+    "boundingBox": [
+      257,
+      418,
+      342,
+      507
+    ],
+    "confidence": 0.839,
+    "id": 1,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "1)"
+  },
+  {
+    "boundingBox": [
+      357,
+      423,
+      502,
+      518
+    ],
+    "confidence": 0.997,
+    "id": 2,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "The"
+  },
+  {
+    "boundingBox": [
+      613,
+      437,
+      835,
+      537
+    ],
+    "confidence": 0.996,
+    "id": 3,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "colour"
+  },
+  {
+    "boundingBox": [
+      946,
+      456,
+      1024,
+      548
+    ],
+    "confidence": 0.995,
+    "id": 4,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1113,
+      465,
+      1257,
+      559
+    ],
+    "confidence": 0.994,
+    "id": 5,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      1357,
+      477,
+      1513,
+      571
+    ],
+    "confidence": 0.887,
+    "id": 6,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "arid"
+  },
+  {
+    "boundingBox": [
+      1624,
+      490,
+      1779,
+      582
+    ],
+    "confidence": 0.98,
+    "id": 7,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "soil"
+  },
+  {
+    "boundingBox": [
+      1835,
+      500,
+      2079,
+      593
+    ],
+    "confidence": 0.994,
+    "id": 8,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "ranges"
+  },
+  {
+    "boundingBox": [
+      2157,
+      515,
+      2313,
+      601
+    ],
+    "confidence": 0.99,
+    "id": 9,
+    "line_text": "7A) 1) The colour of the arid soil ranges from",
+    "text": "from"
+  },
+  {
+    "boundingBox": [
+      368,
+      558,
+      495,
+      640
+    ],
+    "confidence": 0.984,
+    "id": 0,
+    "line_text": "red",
+    "text": "red"
+  },
+  {
+    "boundingBox": [
+      625,
+      568,
+      706,
+      649
+    ],
+    "confidence": 0.927,
+    "id": 0,
+    "line_text": "to",
+    "text": "to"
+  },
+  {
+    "boundingBox": [
+      835,
+      578,
+      1054,
+      662
+    ],
+    "confidence": 0.997,
+    "id": 0,
+    "line_text": "brown",
+    "text": "brown"
+  },
+  {
+    "boundingBox": [
+      262,
+      654,
+      328,
+      753
+    ],
+    "confidence": 0.843,
+    "id": 0,
+    "line_text": "2) Arid soil is generally",
+    "text": "2)"
+  },
+  {
+    "boundingBox": [
+      343,
+      660,
+      491,
+      759
+    ],
+    "confidence": 0.894,
+    "id": 1,
+    "line_text": "2) Arid soil is generally",
+    "text": "Arid"
+  },
+  {
+    "boundingBox": [
+      615,
+      678,
+      762,
+      770
+    ],
+    "confidence": 0.991,
+    "id": 2,
+    "line_text": "2) Arid soil is generally",
+    "text": "soil"
+  },
+  {
+    "boundingBox": [
+      841,
+      691,
+      932,
+      777
+    ],
+    "confidence": 0.997,
+    "id": 3,
+    "line_text": "2) Arid soil is generally",
+    "text": "is"
+  },
+  {
+    "boundingBox": [
+      1023,
+      699,
+      1328,
+      794
+    ],
+    "confidence": 0.885,
+    "id": 4,
+    "line_text": "2) Arid soil is generally",
+    "text": "generally"
+  },
+  {
+    "boundingBox": [
+      322,
+      765,
+      479,
+      873
+    ],
+    "confidence": 0.998,
+    "id": 0,
+    "line_text": "and",
+    "text": "and"
+  },
+  {
+    "boundingBox": [
+      1461,
+      705,
+      1724,
+      822
+    ],
+    "confidence": 0.987,
+    "id": 0,
+    "line_text": "sandy and texture",
+    "text": "sandy"
+  },
+  {
+    "boundingBox": [
+      1823,
+      715,
+      1986,
+      834
+    ],
+    "confidence": 0.997,
+    "id": 1,
+    "line_text": "sandy and texture",
+    "text": "and"
+  },
+  {
+    "boundingBox": [
+      2054,
+      724,
+      2336,
+      849
+    ],
+    "confidence": 0.992,
+    "id": 2,
+    "line_text": "sandy and texture",
+    "text": "texture"
+  },
+  {
+    "boundingBox": [
+      609,
+      794,
+      829,
+      889
+    ],
+    "confidence": 0.93,
+    "id": 0,
+    "line_text": "saline",
+    "text": "saline"
+  },
+  {
+    "boundingBox": [
+      932,
+      805,
+      1033,
+      892
+    ],
+    "confidence": 0.998,
+    "id": 0,
+    "line_text": "in",
+    "text": "in"
+  },
+  {
+    "boundingBox": [
+      1168,
+      826,
+      1448,
+      912
+    ],
+    "confidence": 0.723,
+    "id": 0,
+    "line_text": "nature.",
+    "text": "nature."
+  },
+  {
+    "boundingBox": [
+      251,
+      892,
+      324,
+      983
+    ],
+    "confidence": 0.987,
+    "id": 0,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "3)"
+  },
+  {
+    "boundingBox": [
+      348,
+      896,
+      502,
+      989
+    ],
+    "confidence": 0.999,
+    "id": 1,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "The"
+  },
+  {
+    "boundingBox": [
+      598,
+      906,
+      751,
+      999
+    ],
+    "confidence": 0.975,
+    "id": 2,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "soil"
+  },
+  {
+    "boundingBox": [
+      847,
+      915,
+      1036,
+      1011
+    ],
+    "confidence": 0.984,
+    "id": 3,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "lack"
+  },
+  {
+    "boundingBox": [
+      1144,
+      927,
+      1227,
+      1019
+    ],
+    "confidence": 0.997,
+    "id": 4,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1310,
+      933,
+      1584,
+      1035
+    ],
+    "confidence": 0.929,
+    "id": 5,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "human"
+  },
+  {
+    "boundingBox": [
+      1714,
+      949,
+      1881,
+      1048
+    ],
+    "confidence": 0.992,
+    "id": 6,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "and"
+  },
+  {
+    "boundingBox": [
+      1998,
+      959,
+      2322,
+      1069
+    ],
+    "confidence": 0.973,
+    "id": 7,
+    "line_text": "3) The soil lack of human and mostuire",
+    "text": "mostuire"
+  },
+  {
+    "boundingBox": [
+      331,
+      997,
+      642,
+      1117
+    ],
+    "confidence": 0.978,
+    "id": 0,
+    "line_text": "becomes dry climate, high temperature and",
+    "text": "becomes"
+  },
+  {
+    "boundingBox": [
+      753,
+      1015,
+      909,
+      1130
+    ],
+    "confidence": 0.98,
+    "id": 1,
+    "line_text": "becomes dry climate, high temperature and",
+    "text": "dry"
+  },
+  {
+    "boundingBox": [
+      983,
+      1027,
+      1389,
+      1149
+    ],
+    "confidence": 0.887,
+    "id": 2,
+    "line_text": "becomes dry climate, high temperature and",
+    "text": "climate,"
+  },
+  {
+    "boundingBox": [
+      1405,
+      1048,
+      1585,
+      1155
+    ],
+    "confidence": 0.987,
+    "id": 3,
+    "line_text": "becomes dry climate, high temperature and",
+    "text": "high"
+  },
+  {
+    "boundingBox": [
+      1673,
+      1062,
+      2133,
+      1170
+    ],
+    "confidence": 0.98,
+    "id": 4,
+    "line_text": "becomes dry climate, high temperature and",
+    "text": "temperature"
+  },
+  {
+    "boundingBox": [
+      2197,
+      1090,
+      2350,
+      1173
+    ],
+    "confidence": 0.985,
+    "id": 5,
+    "line_text": "becomes dry climate, high temperature and",
+    "text": "and"
+  },
+  {
+    "boundingBox": [
+      324,
+      1108,
+      496,
+      1220
+    ],
+    "confidence": 0.718,
+    "id": 0,
+    "line_text": "fast",
+    "text": "fast"
+  },
+  {
+    "boundingBox": [
+      593,
+      1124,
+      1018,
+      1243
+    ],
+    "confidence": 0.848,
+    "id": 0,
+    "line_text": "evapartion",
+    "text": "evapartion"
+  },
+  {
+    "boundingBox": [
+      236,
+      1235,
+      327,
+      1325
+    ],
+    "confidence": 0.884,
+    "id": 0,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "4)"
+  },
+  {
+    "boundingBox": [
+      346,
+      1239,
+      501,
+      1332
+    ],
+    "confidence": 0.998,
+    "id": 1,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "The"
+  },
+  {
+    "boundingBox": [
+      585,
+      1248,
+      795,
+      1344
+    ],
+    "confidence": 0.98,
+    "id": 2,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "lower"
+  },
+  {
+    "boundingBox": [
+      911,
+      1263,
+      1089,
+      1356
+    ],
+    "confidence": 0.943,
+    "id": 3,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "Parts"
+  },
+  {
+    "boundingBox": [
+      1183,
+      1276,
+      1275,
+      1363
+    ],
+    "confidence": 0.979,
+    "id": 4,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1335,
+      1283,
+      1471,
+      1371
+    ],
+    "confidence": 0.986,
+    "id": 5,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      1541,
+      1292,
+      1699,
+      1380
+    ],
+    "confidence": 0.979,
+    "id": 6,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "soil"
+  },
+  {
+    "boundingBox": [
+      1813,
+      1304,
+      1950,
+      1390
+    ],
+    "confidence": 0.999,
+    "id": 7,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      2030,
+      1314,
+      2342,
+      1400
+    ],
+    "confidence": 0.936,
+    "id": 8,
+    "line_text": "4) The lower Parts of the soil are occupied",
+    "text": "occupied"
+  },
+  {
+    "boundingBox": [
+      300,
+      1357,
+      381,
+      1439
+    ],
+    "confidence": 0.992,
+    "id": 0,
+    "line_text": "by the kankar because of clacium constitution",
+    "text": "by"
+  },
+  {
+    "boundingBox": [
+      472,
+      1361,
+      631,
+      1449
+    ],
+    "confidence": 0.987,
+    "id": 1,
+    "line_text": "by the kankar because of clacium constitution",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      733,
+      1367,
+      971,
+      1464
+    ],
+    "confidence": 0.863,
+    "id": 2,
+    "line_text": "by the kankar because of clacium constitution",
+    "text": "kankar"
+  },
+  {
+    "boundingBox": [
+      1074,
+      1378,
+      1391,
+      1482
+    ],
+    "confidence": 0.953,
+    "id": 3,
+    "line_text": "by the kankar because of clacium constitution",
+    "text": "because"
+  },
+  {
+    "boundingBox": [
+      1483,
+      1394,
+      1572,
+      1490
+    ],
+    "confidence": 0.974,
+    "id": 4,
+    "line_text": "by the kankar because of clacium constitution",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      1676,
+      1403,
+      1958,
+      1506
+    ],
+    "confidence": 0.93,
+    "id": 5,
+    "line_text": "by the kankar because of clacium constitution",
+    "text": "clacium"
+  },
+  {
+    "boundingBox": [
+      2050,
+      1423,
+      2389,
+      1524
+    ],
+    "confidence": 0.873,
+    "id": 6,
+    "line_text": "by the kankar because of clacium constitution",
+    "text": "constitution"
+  },
+  {
+    "boundingBox": [
+      276,
+      1466,
+      374,
+      1557
+    ],
+    "confidence": 0.971,
+    "id": 0,
+    "line_text": "of",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      501,
+      1486,
+      712,
+      1571
+    ],
+    "confidence": 0.995,
+    "id": 0,
+    "line_text": "water in lower layers.",
+    "text": "water"
+  },
+  {
+    "boundingBox": [
+      788,
+      1489,
+      890,
+      1579
+    ],
+    "confidence": 0.996,
+    "id": 1,
+    "line_text": "water in lower layers.",
+    "text": "in"
+  },
+  {
+    "boundingBox": [
+      1020,
+      1494,
+      1234,
+      1592
+    ],
+    "confidence": 0.976,
+    "id": 2,
+    "line_text": "water in lower layers.",
+    "text": "lower"
+  },
+  {
+    "boundingBox": [
+      1296,
+      1505,
+      1599,
+      1601
+    ],
+    "confidence": 0.88,
+    "id": 3,
+    "line_text": "water in lower layers.",
+    "text": "layers."
+  },
+  {
+    "boundingBox": [
+      89,
+      1686,
+      167,
+      1790
+    ],
+    "confidence": 0.749,
+    "id": 0,
+    "line_text": "8.A) 1) It",
+    "text": "8.A)"
+  },
+  {
+    "boundingBox": [
+      185,
+      1686,
+      274,
+      1797
+    ],
+    "confidence": 0.698,
+    "id": 1,
+    "line_text": "8.A) 1) It",
+    "text": "1)"
+  },
+  {
+    "boundingBox": [
+      293,
+      1689,
+      387,
+      1796
+    ],
+    "confidence": 0.964,
+    "id": 2,
+    "line_text": "8.A) 1) It",
+    "text": "It"
+  },
+  {
+    "boundingBox": [
+      469,
+      1699,
+      591,
+      1811
+    ],
+    "confidence": 0.97,
+    "id": 0,
+    "line_text": "is",
+    "text": "is"
+  },
+  {
+    "boundingBox": [
+      641,
+      1690,
+      809,
+      1811
+    ],
+    "confidence": 0.997,
+    "id": 0,
+    "line_text": "the human",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      859,
+      1706,
+      1138,
+      1829
+    ],
+    "confidence": 0.93,
+    "id": 1,
+    "line_text": "the human",
+    "text": "human"
+  },
+  {
+    "boundingBox": [
+      1218,
+      1722,
+      1345,
+      1836
+    ],
+    "confidence": 0.998,
+    "id": 0,
+    "line_text": "is the centre of the",
+    "text": "is"
+  },
+  {
+    "boundingBox": [
+      1366,
+      1728,
+      1536,
+      1847
+    ],
+    "confidence": 0.998,
+    "id": 1,
+    "line_text": "is the centre of the",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      1586,
+      1737,
+      1859,
+      1861
+    ],
+    "confidence": 0.979,
+    "id": 2,
+    "line_text": "is the centre of the",
+    "text": "centre"
+  },
+  {
+    "boundingBox": [
+      1925,
+      1750,
+      2051,
+      1867
+    ],
+    "confidence": 0.979,
+    "id": 3,
+    "line_text": "is the centre of the",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      2102,
+      1757,
+      2256,
+      1871
+    ],
+    "confidence": 0.997,
+    "id": 4,
+    "line_text": "is the centre of the",
+    "text": "the"
+  },
+  {
+    "boundingBox": [
+      303,
+      1821,
+      627,
+      1912
+    ],
+    "confidence": 0.984,
+    "id": 0,
+    "line_text": "resource",
+    "text": "resource"
+  },
+  {
+    "boundingBox": [
+      726,
+      1820,
+      1206,
+      1949
+    ],
+    "confidence": 0.732,
+    "id": 0,
+    "line_text": "development",
+    "text": "development"
+  },
+  {
+    "boundingBox": [
+      211,
+      1920,
+      296,
+      2011
+    ],
+    "confidence": 0.804,
+    "id": 0,
+    "line_text": "2) Actually",
+    "text": "2)"
+  },
+  {
+    "boundingBox": [
+      312,
+      1926,
+      606,
+      2026
+    ],
+    "confidence": 0.989,
+    "id": 1,
+    "line_text": "2) Actually",
+    "text": "Actually"
+  },
+  {
+    "boundingBox": [
+      730,
+      1950,
+      843,
+      2029
+    ],
+    "confidence": 0.654,
+    "id": 0,
+    "line_text": "011",
+    "text": "011"
+  },
+  {
+    "boundingBox": [
+      958,
+      1962,
+      1300,
+      2062
+    ],
+    "confidence": 0.969,
+    "id": 0,
+    "line_text": "resources",
+    "text": "resources"
+  },
+  {
+    "boundingBox": [
+      1419,
+      1973,
+      1729,
+      2072
+    ],
+    "confidence": 0.769,
+    "id": 0,
+    "line_text": "becomes they",
+    "text": "becomes"
+  },
+  {
+    "boundingBox": [
+      1802,
+      1984,
+      1980,
+      2078
+    ],
+    "confidence": 0.991,
+    "id": 1,
+    "line_text": "becomes they",
+    "text": "they"
+  },
+  {
+    "boundingBox": [
+      2082,
+      1999,
+      2213,
+      2085
+    ],
+    "confidence": 0.997,
+    "id": 0,
+    "line_text": "are",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      294,
+      2050,
+      633,
+      2140
+    ],
+    "confidence": 0.971,
+    "id": 0,
+    "line_text": "resource development.",
+    "text": "resource"
+  },
+  {
+    "boundingBox": [
+      727,
+      2062,
+      1271,
+      2167
+    ],
+    "confidence": 0.94,
+    "id": 1,
+    "line_text": "resource development.",
+    "text": "development."
+  },
+  {
+    "boundingBox": [
+      194,
+      2147,
+      276,
+      2249
+    ],
+    "confidence": 0.952,
+    "id": 0,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "3)"
+  },
+  {
+    "boundingBox": [
+      293,
+      2152,
+      438,
+      2253
+    ],
+    "confidence": 0.999,
+    "id": 1,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "The"
+  },
+  {
+    "boundingBox": [
+      536,
+      2164,
+      862,
+      2267
+    ],
+    "confidence": 0.979,
+    "id": 2,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "resource"
+  },
+  {
+    "boundingBox": [
+      984,
+      2185,
+      1105,
+      2276
+    ],
+    "confidence": 0.828,
+    "id": 3,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "can"
+  },
+  {
+    "boundingBox": [
+      1177,
+      2193,
+      1274,
+      2284
+    ],
+    "confidence": 0.994,
+    "id": 4,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "be"
+  },
+  {
+    "boundingBox": [
+      1359,
+      2201,
+      1542,
+      2296
+    ],
+    "confidence": 0.991,
+    "id": 5,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "used"
+  },
+  {
+    "boundingBox": [
+      1601,
+      2210,
+      1699,
+      2304
+    ],
+    "confidence": 0.99,
+    "id": 6,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "to"
+  },
+  {
+    "boundingBox": [
+      1795,
+      2218,
+      2059,
+      2323
+    ],
+    "confidence": 0.835,
+    "id": 7,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "dams,"
+  },
+  {
+    "boundingBox": [
+      2073,
+      2227,
+      2319,
+      2338
+    ],
+    "confidence": 0.996,
+    "id": 8,
+    "line_text": "3) The resource can be used to dams, houses",
+    "text": "houses"
+  },
+  {
+    "boundingBox": [
+      265,
+      2266,
+      522,
+      2369
+    ],
+    "confidence": 0.961,
+    "id": 0,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "bridges"
+  },
+  {
+    "boundingBox": [
+      628,
+      2282,
+      826,
+      2381
+    ],
+    "confidence": 0.998,
+    "id": 1,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "power"
+  },
+  {
+    "boundingBox": [
+      898,
+      2294,
+      1155,
+      2394
+    ],
+    "confidence": 0.619,
+    "id": 2,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "houses"
+  },
+  {
+    "boundingBox": [
+      1285,
+      2311,
+      1366,
+      2403
+    ],
+    "confidence": 0.986,
+    "id": 3,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "to"
+  },
+  {
+    "boundingBox": [
+      1390,
+      2316,
+      1542,
+      2411
+    ],
+    "confidence": 0.968,
+    "id": 4,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "run"
+  },
+  {
+    "boundingBox": [
+      1613,
+      2326,
+      1800,
+      2423
+    ],
+    "confidence": 0.889,
+    "id": 5,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "uses"
+  },
+  {
+    "boundingBox": [
+      1870,
+      2337,
+      1976,
+      2430
+    ],
+    "confidence": 0.979,
+    "id": 6,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "of"
+  },
+  {
+    "boundingBox": [
+      2046,
+      2345,
+      2316,
+      2445
+    ],
+    "confidence": 0.971,
+    "id": 7,
+    "line_text": "bridges power houses to run uses of teachers",
+    "text": "teachers"
+  },
+  {
+    "boundingBox": [
+      225,
+      2357,
+      611,
+      2491
+    ],
+    "confidence": 0.717,
+    "id": 0,
+    "line_text": "doctors; engrings, are requried.",
+    "text": "doctors;"
+  },
+  {
+    "boundingBox": [
+      626,
+      2380,
+      1055,
+      2514
+    ],
+    "confidence": 0.677,
+    "id": 1,
+    "line_text": "doctors; engrings, are requried.",
+    "text": "engrings,"
+  },
+  {
+    "boundingBox": [
+      1068,
+      2404,
+      1238,
+      2523
+    ],
+    "confidence": 0.998,
+    "id": 2,
+    "line_text": "doctors; engrings, are requried.",
+    "text": "are"
+  },
+  {
+    "boundingBox": [
+      1305,
+      2415,
+      1711,
+      2546
+    ],
+    "confidence": 0.727,
+    "id": 3,
+    "line_text": "doctors; engrings, are requried.",
+    "text": "requried."
+  },
+  {
+    "boundingBox": [
+      2013,
+      2936,
+      2038,
+      2953
+    ],
+    "confidence": 0.847,
+    "id": 0,
+    "line_text": "-",
+    "text": "-"
+  },
+  {
+    "boundingBox": [
+      1959,
+      3512,
+      1986,
+      3548
+    ],
+    "confidence": 0.728,
+    "id": 0,
+    "line_text": "..",
+    "text": ".."
+  }
+]

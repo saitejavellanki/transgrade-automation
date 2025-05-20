@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Processing Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .upload-container {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .results-container {
+            display: none;
+            margin-top: 30px;
+        }
+        .page-results {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .page-image {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF Processing Tool</h1>
+    
+    <div class="upload-container">
+        <h2>Upload PDF (Max 2 pages)</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="pdfFile" name="pdf" accept=".pdf">
+            <button type="submit">Process PDF</button>
+        </form>
+    </div>
+    
+    <div class="loading" id="loading">
+        <p>Processing PDF... This may take a minute.</p>
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif" alt="Loading...">
+    </div>
+    
+    <div class="results-container" id="results">
+        <h2>Processing Results</h2>
+        <div id="resultsContent"></div>
+    </div>
+    
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fileInput = document.getElementById('pdfFile');
+            if (!fileInput.files[0]) {
+                alert('Please select a PDF file');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('pdf', fileInput.files[0]);
+            
+            // Show loading indicator
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            
+            // Send the request
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide loading indicator
+                document.getElementById('loading').style.display = 'none';
+                
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                    return;
+                }
+                
+                // Display results
+                const resultsContainer = document.getElementById('resultsContent');
+                resultsContainer.innerHTML = '';
+                
+                data.results.forEach(result => {
+                    const pageDiv = document.createElement('div');
+                    pageDiv.className = 'page-results';
+                    
+                    pageDiv.innerHTML = `
+                        <h3>Page ${result.page}</h3>
+                        <img src="${result.image_path}" class="page-image" alt="Page ${result.page}">
+                        <div>
+                            <a href="/download/${result.ocr_data_path}" class="download-btn">Download OCR Data</a>
+                            <a href="/download/${result.layoutlm_path}" class="download-btn">Download LayoutLM Format</a>
+                        </div>
+                    `;
+                    
+                    resultsContainer.appendChild(pageDiv);
+                });
+                
+                // Show results container
+                document.getElementById('results').style.display = 'block';
+            })
+            .catch(error => {
+                document.getElementById('loading').style.display = 'none';
+                alert('Error: ' + error);
+            });
+        });
+    </script>
+</body>
+</html>
