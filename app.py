@@ -89,4 +89,6 @@ def convert_json_to_layoutlm():
     return jsonify({'message': 'Conversion successful', 'output_file': output_filename})
 
 if __name__ == '__main__':
-    app.run(debug=False, port=5015)
+    import os
+    port = int(os.environ.get('PORT', 5015))  # Use PORT env variable or default to 5015
+    app.run(host='0.0.0.0', port=port, debug=False)
